@@ -1,0 +1,5 @@
+[ 2018-11-12T15:45:34+08:00 ] 172.17.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003826s ]
+
