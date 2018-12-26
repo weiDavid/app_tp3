@@ -21,10 +21,10 @@ class IndexController extends Controller
 		// $len = $this->redis->LLEN('click');
 		// var_dump($a, $len);
 
-    	$users = [
-    		'1'=>['name'=>'zhangsan'],
-    		'2'=>['name'=>'lisi'],
-    	];
+    	$users = array(
+    		'1'=>array('name'=>'zhangsan'),
+    		'2'=>array('name'=>'lisi'),
+    	);
     	$this->assign('random', $random);
     	$this->assign('users', $users);
     	$this->assign("word", "Hello World!");
