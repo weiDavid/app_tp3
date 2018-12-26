@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>在线尝试 Bootstrap 实例</title>
+   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="__CSS__/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+      <div class="container">
+    <div class="row" >
+        <div class="col-xs-6 col-sm-3" 
+            style="background-color: #dedef8;
+            box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-xs-6 col-sm-3" 
+        style="background-color: #dedef8;box-shadow: 
+        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut. 
+            </p>
+        </div>
+        <div class="clearfix visible-xs"></div>
+ 
+        <div class="col-xs-6 col-sm-3" 
+        style="background-color: #dedef8;
+        box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+        </div>
+        <div class="col-xs-6 col-sm-3" 
+        style="background-color: #dedef8;box-shadow: 
+        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim 
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>第一列</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-8"><h2>.col-md-8</h2><p>aaaaaaaa</p></div>
+                <div class="col-md-4"><h2>.col-md-4</h2><p>bbbbbbbb</p></div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div style="background-color: gray" class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+            <div style="background-color: red" class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+        <div>
+        <div class="well">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>使用列表类图标</li>
+            <li><i class="fa-li fa fa-check-square"></i>轻松的替换</li>
+            <li><i class="fa-li fa fa-spinner fa-spin"></i>无序列表</li>
+            <li><i class="fa-li fa fa-square"></i>中的默认图标</li>
+          </ul>
+        </div>
+        <div class="well">
+          <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+          <p>...独坐在路边街角 冷风吹醒，默默地伴着我的孤影，只想将结他紧抱，诉出辛酸，就在这刻想起往事，心中一股冲劲勇闯，抛开那现实没有顾虑，仿佛身边拥有一切，看似与别人筑起隔膜。</p>   
+        </div>
+
+        <div class="well">
+          <volist name="users" id="vo">
+            {$vo.name}<br/>
+          </volist>
+          random={$random}
+        </div>
+
+        <div class="well">
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+            <br/>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+        </div>
+        <div class="well">
+          <div>
+          <address>
+                  <strong>Twitter, Inc.</strong><br>
+                  1355 Market Street, Suite 900<br>
+                  San Francisco, CA 94103<br>
+                  <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+          </div>
+        </div>
+
+
+
+      </div>
+
+        <!-- test code -->
+        <div class="modal" id="deadAdd" style="display: none"></div>
+        <div>
+        <button id="test" class="btn btn-default" data-toggle="modal" data-remote="./add">
+             {$word} <i class="fa fa-ambulance"></i>
+          </button>
+        </div>
+      </div>
+<script>
+    $('#test').click(function (event) {
+            console.log(111);
+            //如果是a链接，阻止其跳转到url页面
+            event.preventDefault();
+            //获取url的值
+            var url = $('#test').data('remote')||$('#test').attr('href');
+            //将id为deadAdd的页面元素作为模态框激活
+            $('#deadAdd').modal();
+            //从url加载数据到模态框
+            $('#deadAdd').load(url);
+    });
+</script>
+</body>
+</html>
