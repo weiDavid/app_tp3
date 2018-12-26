@@ -28,7 +28,7 @@ class IndexController extends Controller
     	$this->assign('random', $random);
     	$this->assign('users', $users);
     	$this->assign("word", "Hello World!");
-        $this->display();
+        $this->display('index/index');
     }
 
     public function list_pop(){
