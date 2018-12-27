@@ -47,6 +47,6 @@ class IndexController extends Controller
 
     public function add()
     {
-        $this->display();
+        $this->display('index/add');
     }
 }
